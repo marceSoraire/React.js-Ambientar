@@ -1,19 +1,21 @@
 header {
     display: flex;
     justify-content:space-between;
-    background: rgb(221, 100, 56);
+    background: #333;
+    border-bottom: 1px solid #333;
 }
 .title {
     display: flex;
     color: white;
 }
 h1 {
-    margin-left: 15px;
+    margin-left: 3rem;
 }
-img {
-    height: 80px;
-    margin-left: 20px;
-    padding: 10px;
+.logoTipo{
+    height: 70px;
+    margin: 8px 0 8px 3rem;
+    border-radius: 15%;
+    border: 1px solid #fff;
 }
 ul {
     display: flex;
@@ -25,4 +27,5 @@ li {
     margin: auto;
     padding: 15px;   
     justify-content: space-around;
+    font-size: 18px;
 }
