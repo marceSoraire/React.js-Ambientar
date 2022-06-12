@@ -13,7 +13,7 @@ h1 {
 }
 .logoTipo{
     height: 70px;
-    margin: 8px 0 8px 3rem;
+    margin: 13px 0 8px 3rem;
     border-radius: 15%;
     border: 1px solid #fff;
 }
@@ -28,4 +28,8 @@ li {
     padding: 15px;   
     justify-content: space-around;
     font-size: 18px;
+}
+.carrito {
+    font-size: 20px;
+    margin: 0 1rem;
 }
