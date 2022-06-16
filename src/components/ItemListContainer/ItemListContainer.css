@@ -1,0 +1,7 @@
+.itemListContainer-Container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    margin: 2rem 4rem;
+    padding: 3rem;
+}

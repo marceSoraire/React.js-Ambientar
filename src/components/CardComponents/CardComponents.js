@@ -3,30 +3,26 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import ItemCount from '../ItemCount/ItemCount';
 
-const MediaCard = ({ precio, producto, modelo, img, agregar, sacar, contador}) => {
+const MediaCard = ({ data }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia component="img" image={img} alt="green iguana"/>
+    <Card sx={{ maxWidth: 345, margin:4}}>
+      <CardMedia component="img" image={data.img} alt="green iguana"/>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {producto}
+          {data.producto}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {precio}
+          {data.precio}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {modelo}
+          {data.modelo}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button onClick={agregar}>Agregar</Button>
-        <Typography variant="body2" color="text.secondary">
-          {contador}
-        </Typography>
-        <Button onClick={sacar}>Quitar</Button>
+        <ItemCount stock={8} min={0}/>
       </CardActions>
     </Card>
   );

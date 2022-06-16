@@ -1,0 +1,17 @@
+.itemCount {
+    width: 100%;
+}
+.itemCount-count {
+    display: flex;
+    text-align: center;
+    justify-content:space-evenly;
+}
+.btn-suma-resta {
+    color: black;
+    border: 1px solid rgb(58, 125, 58);
+    border-radius: 8%;
+    width: 30%;
+    height: 3vh;
+    background: none;
+    cursor: pointer;
+}
