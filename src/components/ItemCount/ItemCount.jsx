@@ -15,6 +15,9 @@ const ItemCount = ({ stock, min }) => {
         <span>{counter}</span>
         <button className="btn-suma-resta" onClick={resta}>Quitar</button>
       </div>
+      {/* <div className='item-details'>
+      <button className="btn-suma-resta" onClick={resta}>Detalles</button>
+      </div> */}
     </section>
   )
 }
