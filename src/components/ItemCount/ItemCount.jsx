@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import './ItemCount.css';
 
-const ItemCount = ({ stock, min }) => {
+const ItemCount = ({ stock, min, idP }) => {
 
   const [counter, setCounter] = useState(0);
 
   const suma = () => counter < stock ? setCounter(counter + 1) : console.log('no quedan mas unidades');
   const resta = () => counter > min ? setCounter(counter - 1) : console.log('El producto esta vacio');
+  // const llamadaID = () => console.log(`ID: ${idP}`);
 
   return (
     <section className="itemCount">
@@ -16,7 +17,7 @@ const ItemCount = ({ stock, min }) => {
         <button className="btn-suma-resta" onClick={resta}>Quitar</button>
       </div>
       {/* <div className='item-details'>
-      <button className="btn-suma-resta" onClick={resta}>Detalles</button>
+        <button className="btn-suma-resta" onClick={llamadaID}>Detalles</button>
       </div> */}
     </section>
   )

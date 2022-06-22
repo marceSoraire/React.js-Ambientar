@@ -22,10 +22,12 @@ const MediaCard = ({ data }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <ItemCount stock={8} min={0}/>
+        <ItemCount idP={data.id}/>
       </CardActions>
     </Card>
   );
 }
 
 export default MediaCard;
+
+// stock={8} min={0}
