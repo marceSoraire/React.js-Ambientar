@@ -12,8 +12,8 @@ h1 {
     margin-left: 3rem;
 }
 .logoTipo{
-    height: 70px;
-    margin: 13px 0 8px 3rem;
+    height: 80px;
+    margin: 10px 0 10px 3rem;
     border-radius: 15%;
     border: 1px solid #fff;
 }
@@ -21,8 +21,9 @@ ul {
     display: flex;
     margin-right: 20px;
 }
-li {
+.li {
     list-style: none;
+    text-decoration: none;
     color: white;
     margin: auto;
     padding: 15px;   

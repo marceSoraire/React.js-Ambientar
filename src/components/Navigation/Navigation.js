@@ -1,7 +1,8 @@
 import './Navigation.css';
+import { Link } from 'react-router-dom';
 import BsFillCartFill from '../CartWidget/CartWidget';
-import logo from './logoA.jpg';
-import { ImHome, ImUsers } from "react-icons/im";
+import logo from './logoB.png';
+import { ImHome, ImUsers, ImExit } from "react-icons/im";
 
 const Navigation = () => {
     return(
@@ -12,11 +13,9 @@ const Navigation = () => {
             </div>
             <nav>
                 <ul>
-                    <li><ImHome/><a> Home</a></li>
-                    <li><ImUsers/><a> Nosotros</a></li>
-                    <li><a>Electro</a></li>
-                    <li><a>Muebles</a></li>
-                    <li><a>Moviles</a></li>
+                    <Link to='/' className='li'><ImHome/> Home</Link>
+                    <Link to='/Product' className='li'><ImExit/> Product</Link>
+                    <Link to='/Contact' className='li'><ImUsers/> Contact</Link>
                     <span className='carrito'><BsFillCartFill/></span>
                 </ul>
             </nav>

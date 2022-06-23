@@ -1,23 +1,23 @@
-.itemCount {
-    width: 100%;
-}
-.itemCount-count {
-    display: flex;
-    text-align: center;
-    justify-content:space-evenly;
-}
-.item-details {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-}
 .btn-suma-resta {
     color: black;
-    border: 1px solid rgb(58, 125, 58);
-    border-radius: 8%;
+    border: 1px solid rgb(185, 184, 184);
+    border-radius: 3%;
+    margin: 30px;
     width: 30%;
     height: 3vh;
-    background: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+.btn-compra {
+    background: rgb(50, 143, 50);
+    border: 1px solid #444;
+    height: 4vh;
+    width: 80%;
+    border-radius: 3%;
+    color: #fff;
+    font-size: 17px;
+}
+.btn-compra:hover {
+    background: green;
     cursor: pointer;
 }

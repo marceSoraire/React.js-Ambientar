@@ -1,27 +1,33 @@
-import { useState } from 'react';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+//views
+import Home from './views/Home/Home';
+import Contact from './views/Contact/Contact';
+import Product from './views/Product/Product';
+import ElemenDetail from './views/ElemenDetail/ElemenDetail';
+
 
 //component
 import Navigation from './components/Navigation/Navigation';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-// import ApiGet from './components/ApiGet/ApiGet';
-// import Loading from './components/Spiner/Spiner';
 import Footer from './components/Footer/Footer';
 
 const App = () => {
 
-  const [load, setLoad] = useState(true);
-
   return (
-    <div className='App'>
-      <div><Navigation /></div>
-      <button onClick={() => setLoad(!load)} className='btn-cambio'>
-        Detalles
-      </button>
-      {load ? <ItemListContainer/> : <ItemDetailContainer/>}
-      <div><Footer /></div>
-    </div>
+    <Router>
+      <div className='App'>
+        <Navigation />
+        <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/Product' element={<Product/>}></Route>
+          <Route path='/Contact' element={<Contact/>}></Route>
+          <Route path='/detail/:id' element={<ElemenDetail/>}></Route>
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
