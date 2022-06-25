@@ -20,10 +20,10 @@ const App = () => {
       <div className='App'>
         <Navigation />
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/Product' element={<Product/>}></Route>
-          <Route path='/Contact' element={<Contact/>}></Route>
-          <Route path='/detail/:id' element={<ElemenDetail/>}></Route>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/category/:id' element={<Product />}></Route>
+          <Route path='/Contact' element={<Contact />}></Route>
+          <Route path='/detail/:id' element={<ElemenDetail />}></Route>
         </Routes>
         <Footer />
       </div>

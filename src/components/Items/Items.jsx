@@ -10,17 +10,17 @@ export const items = [
     },
     {
         id:2,
-        img:'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/gabinete-gamer-raidmax-vortex-v4-404wb-0.jpg',
-        precio:'140000',
-        producto:'PC gamer',
-        stock:8,
+        img:'https://m.media-amazon.com/images/I/71Fm5seJVPL._AC_SY355_.jpg',
+        precio:'120000',
+        producto:'Gabinete',
+        stock:7,
         fabricado:'Argentina',
-        modelo:'Radmax Vortex v4 404WB'
+        modelo:'Combo "Gabinete + Monitor y Accesorios '
     },
     {
         id:3,
         img:'https://arsonyb2c.vtexassets.com/arquivos/ids/348010/PS5_Dig_DS_B.jpg?v=637363629365300000',
-        precio:'150000',
+        precio:'210000',
         producto:'Consola',
         stock:4,
         fabricado:'japon',
@@ -28,29 +28,56 @@ export const items = [
     },
     {
         id:4,
-        img:'https://d2r9epyceweg5n.cloudfront.net/stores/959/516/products/51mrs1wzk8l-_sl1000_1-d8bd50c9e4eaf9920815756371652730-1024-1024.jpg',
-        precio:'230000',
-        producto:'Heladera',
+        img:'https://assets.spartangeek.com/cc/_AUTOxAUTO_crop_center-center_none/37250/MSI-Gungnir-110R-1.webp',
+        precio:'40000',
+        producto:'Gabinete',
         stock:6,
-        fabricado:'Brasil',
-        modelo:'Samsung Inverter'
+        fabricado:'Argentina',
+        modelo:'Thanos 70i X'
     },
     {
         id:5,
-        img:'https://ig.com.ar/wp-content/uploads/2018/12/Cocina-industrial-en-zona-sur-Modelo-Hi-tech.jpg',
-        precio:'180000',
-        producto:'Cocina',
-        stock:5,
+        img:'https://cbff-teco-strapi-cms-pro.s3.amazonaws.com/SG_A03_128_GB_Negro_R30_min_90cb55d161.png',
+        precio:'40000',
+        producto:'Celular',
+        stock:8,
         fabricado:'Argentina',
-        modelo:'Industrial'
+        modelo:'Samsung A033'
     },
     {
         id:6,
-        img:'https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92359391/fee_786_587_png',
-        precio:'210000',
-        producto:'Televisior',
-        stock:12,
+        img:'https://asgardstores.com/725-large_default/play-station-4-slim.jpg',
+        precio:'170000',
+        producto:'Consola',
+        stock:5,
+        fabricado:'Japon',
+        modelo:'PlayStation 4'
+    },
+    {
+        id:7,
+        img:'https://www.radioshack.com.mx/medias/100001289.jpg-515ftw?context=bWFzdGVyfHJvb3R8OTE2OTd8aW1hZ2UvanBlZ3xoYjIvaDIyLzkwNTc3ODYxMzQ1NTgvMTAwMDAxMjg5LmpwZ181MTVmdHd8YWQ2MzQ4ZTIxNzU3MDhhZjUzNDc2ODFmOGEyNzY2NGM4NmNmY2EwYTE1OTJkYzc0MWY5MzBkODUwYTJkOGExOA',
+        precio:'140000',
+        producto:'Consola',
+        stock:6,
         fabricado:'Argentina',
-        modelo:'LG smart'
+        modelo:'Xbox serie X'
+    },
+    {
+        id:8,
+        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67XfpukCXXQKdJAG-fXVLJdma3-XkeLrwqmvgQrH95wG_Tv92AJjPe9tWF6mC9ElekT4&usqp=CAU',
+        precio:'35000',
+        producto:'Celular',
+        stock:7,
+        fabricado:'Argentina',
+        modelo:'Nokia 7.2'
+    },
+    {
+        id:9,
+        img:'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/gabinete-gamer-raidmax-vortex-v4-404wbu-0.jpg',
+        precio:'35000',
+        producto:'Gabinete',
+        stock:8,
+        fabricado:'Argentina',
+        modelo:'Radmax Vortex v4 404WB'
     }
 ]
