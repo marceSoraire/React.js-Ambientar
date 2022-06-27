@@ -10,7 +10,7 @@ const MediaCard = ({ data }) => {
       <CardMedia component="img" image={data.img} alt="green iguana"/>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {data.producto}
+          {data.categoria}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {data.precio}
@@ -24,5 +24,3 @@ const MediaCard = ({ data }) => {
 }
 
 export default MediaCard;
-
-// stock={8} min={0}

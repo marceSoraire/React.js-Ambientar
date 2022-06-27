@@ -9,7 +9,6 @@ const ItemCount = ({ data }) => {
 
   const min = 1;
   const suma = () => {
-    console.log(data.stock);
     if (counter < data.stock) {
       setCounter(counter + 1)
     }else {

@@ -3,6 +3,7 @@ header {
     justify-content:space-evenly;
     background: #2471A3;
     border-bottom: 1px solid #333;
+    height: 11vh;
 }
 .title {
     display: flex;
@@ -58,9 +59,14 @@ ul {
     font-size: 26px;
     margin: 0 1rem;
 }
-
-.AABB {
-    display: block;
-    margin-top: 5px;
-    padding: 5px 0;
+.category-list {
+    width: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+option {
+    color: #000;
+    font-size: 16px;
 }

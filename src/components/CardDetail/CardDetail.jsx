@@ -8,7 +8,7 @@ const CardDetail= ( {data} ) => {
     <Card sx={{ height: 300,}}>
       <CardContent>
       <Typography gutterBottom variant="h3" component="div">
-            {data.producto}
+            {data.categoria}
         </Typography>
         <Typography gutterBottom variant="h4" component="div">
             {data.modelo}
