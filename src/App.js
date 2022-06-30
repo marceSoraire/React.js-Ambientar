@@ -6,11 +6,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contact from './views/Contact/Contact';
 import ElemenDetail from './views/ElemenDetail/ElemenDetail';
 
-
 //component
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Cart from './components/Cart/Cart';
 
 const App = () => {
 
@@ -23,6 +23,7 @@ const App = () => {
           <Route path='/category/:categoryId' element={<ItemListContainer />}></Route>
           <Route path='/Contact' element={<Contact />}></Route>
           <Route path='/detail/:id' element={<ElemenDetail />}></Route>
+          <Route path='/cart' element={<Cart />}></Route>
         </Routes>
         <Footer />
       </div>

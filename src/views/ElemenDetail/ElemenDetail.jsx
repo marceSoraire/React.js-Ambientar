@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { items } from '../../components/Items/Items';
 import './ElemenDetail.css';
-import ItemCount from '../../components/ItemCount/ItemCount';
+import ItemDetail from '../../components/ItemDetail/ItemDetail';
 import Loading from '../../components/Spiner/Spiner';
 import CardComponents from '../../components/CardComponents/CardComponents';
 
@@ -31,7 +31,7 @@ const ElemenDetail = () => {
                 {load ? <Loading /> : <CardComponents data={element} />}
             </div>
             <div className="itemCount-count">
-                {load ? <Loading /> : <ItemCount data={element} />}
+                {load ? <Loading /> : <ItemDetail data={element} />}
             </div>
         </div >
     )

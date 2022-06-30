@@ -1,0 +1,13 @@
+.carro-vacio {
+    margin: auto auto;
+}
+h3 {
+    font-size: 30px;
+    color: #666;
+    padding-top: 2rem;
+}
+.vacio {
+    height: 30vh;
+    margin-bottom: 2rem;
+    padding: 4rem;
+}

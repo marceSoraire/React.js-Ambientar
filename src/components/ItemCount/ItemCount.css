@@ -1,3 +1,6 @@
+.bt-itemCount {
+    margin-top: 20px;
+}
 .btn-suma-resta {
     color: black;
     border: 1px solid rgb(185, 184, 184);
@@ -8,14 +11,19 @@
     cursor: pointer;
     font-size: 25px;
 }
+.add {
+    margin-top: 10px;
+}
 .btn-compra {
     background: #3498DB;
     border: 1px solid #444;
+    padding: 6px;
     height: 4vh;
     width: 80%;
     border-radius: 3%;
     color: #fff;
     font-size: 17px;
+    text-decoration: none;
 }
 .btn-compra:hover {
     background: #2471A3;
