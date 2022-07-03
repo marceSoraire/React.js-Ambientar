@@ -15,7 +15,7 @@ export const items = [
         categoria:'Gabinete',
         stock:7,
         fabricado:'Argentina',
-        modelo:'Combo "Gabinete + Monitor y Accesorios '
+        modelo:'Combo "Gabinete + Monitor y Accesorios'
     },
     {
         id:3,

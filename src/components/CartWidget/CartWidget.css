@@ -1,0 +1,9 @@
+.container-widget {
+    display: flex;
+}
+.cantidad {
+    padding: 0 2px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none !important;
+}

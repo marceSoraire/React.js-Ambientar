@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import img from './carritovacio.png';
 import './Cart.css';
+import { CartContext } from '../CartContext/CartContext';
+import CartContainer from '../CartContainer/CartContainer';
 
 const Cart = () => {
+
+  const [carrito] = useContext(CartContext);
+
   return (
-    <div className='carro-vacio'>
-        <h3>Carrito Vacio</h3>
-        <img className='vacio' src={img} alt='Carro Vacio'/>
-    </div>
+    <>
+      {carrito.length === 0 ?
+        <div className='cart-conteiner'>
+          <h3>Carrito Vacio</h3>
+          <img className='vacio' src={img} alt='Carro Vacio' />
+        </div>
+        : <CartContainer/>
+      }
+    </>
+
   )
 }
 

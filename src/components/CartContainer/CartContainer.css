@@ -1,0 +1,61 @@
+.container {
+    margin-top: 20px;
+    margin-bottom: 10rem;
+}
+.btn-opciones {
+    margin: 10px;
+    padding: 5px;
+    color: #fff;
+    background: #719cb6;
+    border: 1px solid #666;
+    font-size: 15px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.seguir-link {
+    color: #fff;
+    text-decoration: none;
+}
+.seguir:hover {
+    background: #4d718a;
+}
+.vaciar:hover {
+    background: rgb(136, 79, 79);
+}
+.comprar:hover {
+    background: rgb(81, 128, 75);
+}
+.finalizar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 35rem;
+    border: 1px solid #444;
+    /* padding: 8px; */
+}
+.div-img {
+    margin: auto 0;
+    height: 25vh; 
+}
+.img-carrito {
+    height: 100%;
+    width: 200px;
+}
+.div-res {
+    display: block;
+    padding: 10px;
+    text-align: start;
+}
+.btn-carrito {
+    display: block;
+    background: none;
+    font-size: 20px;
+    border: none;
+    align-content: flex-end;
+}
+h3 {
+    color: black;
+    margin-top: 5px;
+    font-size: 20px;
+}
+

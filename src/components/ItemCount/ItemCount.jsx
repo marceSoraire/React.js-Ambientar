@@ -30,9 +30,22 @@ const ItemCount = ({ data, onAdd }) => {
     }
   }
   const compra = () => {
-    let final = counter * data.precio;
-    onAdd(final);
-
+    Swal.fire({
+      title: `Agregar ${counter} ${data.modelo} al carrito?`,
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: 'Agregar',
+      denyButtonText: `No agregar`,
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        Swal.fire(`Añadiste ${counter} ${data.modelo} al carrito`, '', 'success')
+        onAdd( counter );
+      } else if (result.isDenied) {
+        Swal.fire('No se pudo añadir al carrito', '', 'info')
+      }
+    })
+    
   }
   return (
     <section className='bt-itemCount'>
