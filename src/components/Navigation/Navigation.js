@@ -19,7 +19,8 @@ const Navigation = () => {
                 <h1>Ambientar</h1>
             </div>
             <form>
-                <TextField placeholder='Buscar Producto' variant='outlined' className='filtro' />
+                <TextField 
+                placeholder='Buscar Producto' variant='outlined' className='filtro' />
                 <button className='btn-container'><SearchIcon className='btn-lupa' /></button>
                 <div className="ruter">
                     <Link to='/category/Celular' className='ruter-li'>Celular</Link>
