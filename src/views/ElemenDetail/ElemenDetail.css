@@ -1,18 +1,20 @@
 .element-conteiner {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: auto;
     height: 65vh;
 }
 .element-date {
-    margin: auto 1px;
+    display: flex;
+    width: 40%;
 }
 .itemCount-count {
-    background: #fff;
-    margin: auto 1px;
-    width: 380px;
-    height: 49vh;
+    margin-top: 2rem;
+    width: 370px;
     border: 1px solid rgb(242, 238, 238);
     border-bottom: 2px solid #999;
     border-radius: 2%;
+}
+.div-card {
+    text-decoration: none;
 }

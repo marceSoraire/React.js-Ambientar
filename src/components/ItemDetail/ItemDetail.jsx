@@ -8,17 +8,16 @@ import { CartContext } from '../CartContext/CartContext';
 
 const ItemDetail= ( {data} ) => {
 
-  const [carrito, setCarrito, addItem] = useContext(CartContext);
-  let {id, img, precio, modelo, stock} = data;
+  const  { addItem } = useContext(CartContext);
+  const {id, img, precio, modelo,categoria, fabricado, stock} = data;
 
-  const onAdd =(counter)=> {
-    addItem(data, counter)
-  }
+  const onAdd =(cant)=> addItem( data, cant )
+  
   return (
-    <Card sx={{ height: 470}}>
+    <Card sx={{ height: 455}}>
       <CardContent>
       <Typography gutterBottom variant="h3" component="div">
-            {data.categoria}
+            {categoria}
         </Typography>
         <Typography gutterBottom variant="h4" component="div">
             {modelo}
@@ -27,7 +26,7 @@ const ItemDetail= ( {data} ) => {
             {`$${precio}`}
         </Typography>
         <Typography gutterBottom variant="body1" color="text.secondary">
-            {`Fabricado: ${data.fabricado}`}
+            {`Fabricado: ${fabricado}`}
         </Typography>
         <Typography variant="body2" color="text.secondary">
             {`Stock disponible: ${stock}`}

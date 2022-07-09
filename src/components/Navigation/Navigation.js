@@ -9,8 +9,7 @@ import { ImHome, ImUsers} from "react-icons/im";
 import { CartContext } from '../CartContext/CartContext';
 
 const Navigation = () => {
-
-    const [carrito, setCarrito] = useContext(CartContext);
+    const {carrito } = useContext(CartContext);
 
     return (
         <header>
@@ -23,9 +22,12 @@ const Navigation = () => {
                 placeholder='Buscar Producto' variant='outlined' className='filtro' />
                 <button className='btn-container'><SearchIcon className='btn-lupa' /></button>
                 <div className="ruter">
-                    <Link to='/category/Celular' className='ruter-li'>Celular</Link>
-                    <Link to='/category/Consola' className='ruter-li'>Consola</Link>
-                    <Link to='/category/Gabinete' className='ruter-li'>Gabinete</Link>
+                    <Link to='/categoria/Celular' className='ruter-li'>Celular</Link>
+                    <Link to='/categoria/Consola' className='ruter-li'>Consola</Link>
+                    <Link to='/categoria/Electro' className='ruter-li'>Electro</Link>
+                    <Link to='/categoria/Gabinete' className='ruter-li'>Gabinete</Link>
+                    <Link to='/categoria/Televisor' className='ruter-li'>Televisor</Link>
+
                 </div>
             </form>
             <nav>

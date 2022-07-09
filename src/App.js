@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //views
 import Contact from './views/Contact/Contact';
 import ElemenDetail from './views/ElemenDetail/ElemenDetail';
+import Category from './views/Category/Category';
 
 //component
 import Navigation from './components/Navigation/Navigation';
@@ -22,9 +23,10 @@ const App = () => {
           <Navigation />
           <Routes>
             <Route path='/' element={<ItemListContainer />}></Route>
-            <Route path='/category/:categoryId' element={<ItemListContainer />}></Route>
+            <Route path='/categoria/:categoria' element={<Category />}></Route>
             <Route path='/Contact' element={<Contact />}></Route>
             <Route path='/detail/:id' element={<ElemenDetail />}></Route>
+            <Route path='/categoria/:categoria/detail/:id' element={<ElemenDetail />}></Route>
             <Route path='/cart' element={<Cart />}></Route>
           </Routes>
           <Footer />

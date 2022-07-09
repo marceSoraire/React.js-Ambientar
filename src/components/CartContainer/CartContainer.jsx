@@ -7,7 +7,8 @@ import DeleteForever from '@mui/icons-material/DeleteForever';
 import Swal from 'sweetalert2';
 
 const CartContainer = () => {
-    const [carrito, setCarrito, addItem, clear, quantity, removeItem, totalCompra] = useContext(CartContext);
+    
+    const {carrito, clear, removeItem, totalCompra} = useContext(CartContext);
 
     const theEnd = () => {
         Swal.fire({
@@ -22,6 +23,7 @@ const CartContainer = () => {
             clear();
         }, 1500)
     }
+    
     return (
         <div className='container'>
             {carrito.map((e) => (

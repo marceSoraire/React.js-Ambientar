@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import img from './carritovacio.png';
 import './Cart.css';
 import { CartContext } from '../CartContext/CartContext';
@@ -7,13 +7,12 @@ import CartContainer from '../CartContainer/CartContainer';
 
 const Cart = () => {
 
-  const [carrito] = useContext(CartContext);
+  const {carrito} = useContext(CartContext);
 
   return (
     <>
       {carrito.length === 0 ?
         <div className='cart-conteiner'>
-          
           <button className='btn-opciones seguir'>
             <Link to='/' className='seguir-link'>Ir a comprar</Link>
           </button>

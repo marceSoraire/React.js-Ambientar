@@ -17,13 +17,16 @@
     text-decoration: none;
 }
 .seguir:hover {
-    background: #4d718a;
+    background: #5783a1;
+    border: 1px solid #333;
 }
 .vaciar:hover {
     background: rgb(136, 79, 79);
+    border: 1px solid #333;
 }
 .comprar:hover {
     background: rgb(81, 128, 75);
+    border: 1px solid #333;
 }
 .finalizar {
     display: flex;

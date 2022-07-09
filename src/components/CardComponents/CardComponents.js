@@ -5,15 +5,16 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 const MediaCard = ({ data }) => {
+
   return (
     <Card sx={{ maxWidth: 345, margin:4}}>
-      <CardMedia component="img" image={data.img} alt="green iguana"/>
+      <CardMedia component="img" image={data.img} alt={data.categoria}/>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {data.categoria}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {data.precio}
+          ${data.precio}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {data.modelo}

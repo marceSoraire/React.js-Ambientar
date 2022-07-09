@@ -1,35 +1,39 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './ItemListContainer.css'
 import CardComponents from '../CardComponents/CardComponents';
-import { getProductos, getProductosFiltrado } from '../Items/Items';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Loading from '../Spiner/Spiner';
+import { useContext } from 'react';
+import { CartContext } from '../CartContext/CartContext';
 
 const ItemListContainer = () => {
 
-    const [elementos, setElementos] = useState([])
-    let {categoryId} = useParams();
+    const [load, setLoad] = useState(false);
+    const { product } = useContext(CartContext);
 
-    useEffect(()=> {
-        if (categoryId === undefined) {
-            setElementos(getProductos())
-        } else {
-            setElementos(getProductosFiltrado(categoryId))
-        }
-       
-    }, [categoryId])
+    useEffect(() => {
+        setLoad(true)
+        setTimeout(() => setLoad(false), 1500);
+    }, [])
 
     return (
-        <div className='itemListContainer-Container'>
-            {elementos.map((e) => {
-                return (
-                    <div key={e.id}>
-                        <Link to={`detail/${e.id}`} className='div-card'>
-                            <CardComponents data={e}/>
-                        </Link>
-                    </div>
-                );
-            })}
-        </div>
+        <>
+            {load ? (
+                <Loading />
+            ) : (
+                <div className='itemListContainer-Container'>
+                    {product.map((data) => {
+                        return (
+                            <div key={data.id}>
+                                <Link to={`detail/${data.id}`} className='div-card'>
+                                    <CardComponents data={data} />
+                                </Link>
+                            </div>
+                        );
+                    })}
+                </div>
+            )}
+        </>
     )
 }
 
