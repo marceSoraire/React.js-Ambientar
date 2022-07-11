@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import '../ElemenDetail/ElemenDetail.css';
 import Loading from '../../components/Spiner/Spiner';
 import CardComponents from '../../components/CardComponents/CardComponents';
-import { Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { db } from '../../firebase/FirebaseConfig';
 import { collection, query, getDocs, where } from 'firebase/firestore';
 

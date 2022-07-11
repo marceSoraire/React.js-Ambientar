@@ -1,7 +1,6 @@
 import React from 'react'
 import avatar from './avatar.jpg'
 import './Contact.css';
-import 'animate.css';
 
 const Contact = () => {
   return (

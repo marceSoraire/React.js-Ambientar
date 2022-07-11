@@ -1,9 +1,8 @@
-import * as React from 'react';
+import { useContext } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import ItemCount from '../ItemCount/ItemCount';
-import { useContext } from 'react';
 import { CartContext } from '../CartContext/CartContext';
 
 const ItemDetail= ( {data} ) => {
@@ -14,7 +13,7 @@ const ItemDetail= ( {data} ) => {
   const onAdd =(cant)=> addItem( data, cant )
   
   return (
-    <Card sx={{ height: 455}}>
+    <Card sx={{ minHeight: 460}}>
       <CardContent>
       <Typography gutterBottom variant="h3" component="div">
             {categoria}

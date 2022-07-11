@@ -4,7 +4,7 @@
 .btn-suma-resta {
     color: black;
     border: 1px solid rgb(185, 184, 184);
-    border-radius: 3%;
+    border-radius: 5px;
     margin: 30px;
     width: 30%;
     height: 3vh;
@@ -20,7 +20,7 @@
     padding: 6px;
     height: 4vh;
     width: 80%;
-    border-radius: 3%;
+    border-radius: 5px;
     color: #fff;
     font-size: 17px;
     text-decoration: none;

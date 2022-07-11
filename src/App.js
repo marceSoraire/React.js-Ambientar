@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contact from './views/Contact/Contact';
 import ElemenDetail from './views/ElemenDetail/ElemenDetail';
 import Category from './views/Category/Category';
+import FinalPurchase from './views/FinalPurchase/FinalPurchase';
 
 //component
 import Navigation from './components/Navigation/Navigation';
@@ -28,6 +29,7 @@ const App = () => {
             <Route path='/detail/:id' element={<ElemenDetail />}></Route>
             <Route path='/categoria/:categoria/detail/:id' element={<ElemenDetail />}></Route>
             <Route path='/cart' element={<Cart />}></Route>
+            <Route path='/finalpurchase' element={<FinalPurchase />}></Route>
           </Routes>
           <Footer />
         </div>
