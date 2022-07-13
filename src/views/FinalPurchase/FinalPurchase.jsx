@@ -15,8 +15,8 @@ const initial = {
 const FinalPurchase = () => {
 
     const { carrito, clear, totalCompra } = useContext(CartContext);
-    const [ values, setValues ] = useState(initial);
-    const [ purchaseId, setPurchaseId ] = useState('');
+    const [values, setValues] = useState(initial);
+    const [purchaseId, setPurchaseId] = useState('');
     const fecha = new Date();
 
     const handleOnChange = (e) => {
@@ -24,18 +24,24 @@ const FinalPurchase = () => {
         setValues({ ...values, [name]: value })
     }
 
+    const orden = () => {
+        const items = [];
+        carrito.forEach((item) => items.push({ id: item.id, title: item.modelo, }))
+        return items;
+    }
+
     const onSubmit = async (e) => {
         e.preventDefault();
-        const docRef = await addDoc(collection(db, 'purchases'), {
-            values,
-        });
+        const items = orden();
+        const total = totalCompra();
+        const docRef = await addDoc(collection(db, 'purchases'), { values, items, fecha, total });
         setPurchaseId(docRef.id);
 
         setTimeout(() => {
             setPurchaseId('')
-            setValues(initial) 
+            setValues(initial)
             clear()
-        },15000);
+        }, 20000);
     };
 
     return (
@@ -79,19 +85,20 @@ const FinalPurchase = () => {
             ) : (
                 <div className='terminar'>
                     <article>
-                        {`El señor/a ${values.name.toLocaleUpperCase()} realizo el dia 
-                        ${fecha.getDate()}/${fecha.getMonth()+1}/${fecha.getFullYear()}
+                        {`El/La señor/a ${values.name.toLocaleUpperCase()} realizo el dia 
+                        ${fecha.getDate()}/${fecha.getMonth() + 1}/${fecha.getFullYear()}
                         de manera satisfactoria, en la tienda online de "AMBIENTAR", la compra de: `}
                     </article>
                     {carrito.map((e) => {
                         return (
                             <table key={e.id} className='table-compra'>
-                                <td>{e.cant}</td>
-                                <td>{e.categoria}</td>
-                                <td>{e.modelo}</td>
+                                <th>#</th>
+                                <th>{e.cant}</th>
+                                <th>{e.categoria}</th>
+                                <th>{e.modelo}</th>
                             </table>
                         )
-                        })
+                    })
                     }
                     <article>
                         {`Listos para ser entregados dentro de las proximas 72hs habiles al domicilio

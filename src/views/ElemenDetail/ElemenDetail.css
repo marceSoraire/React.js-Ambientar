@@ -11,9 +11,7 @@
 .itemCount-count {
     margin-top: 2rem;
     width: 370px;
-    border: 1px solid rgb(242, 238, 238);
-    border-bottom: 2px solid #999;
-    border-radius: 2%;
+    border-radius: 2px;
 }
 .div-card {
     text-decoration: none;

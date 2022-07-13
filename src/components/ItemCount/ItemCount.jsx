@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const ItemCount = ({ data, onAdd }) => {
   const min = 1;
   const [cant, setCant] = useState(min);
+  const [check, setCheck] = useState(false);
 
   const suma = () => {
     if (cant < data.stock) {
@@ -29,7 +30,7 @@ const ItemCount = ({ data, onAdd }) => {
       );;
     }
   }
-  const compra = () => {
+  const checkOut = () => {
     Swal.fire({
       title: `Agregar ${cant} ${data.modelo} al carrito?`,
       showDenyButton: true,
@@ -39,6 +40,7 @@ const ItemCount = ({ data, onAdd }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         onAdd(cant);
+        setCheck(true);
         Swal.fire(`Añadiste ${cant} ${data.modelo} al carrito`, '', 'success')
       } else if (result.isDenied) {
         Swal.fire('No se pudo añadir al carrito', '', 'info')
@@ -54,11 +56,23 @@ const ItemCount = ({ data, onAdd }) => {
         <button className="btn-suma-resta" onClick={resta}>-</button>
       </div>
       <div className='add'>
-        <Link to='/Cart'>
-          <button className="btn-compra" onClick={compra}>
-            Agregar al Carrito
-          </button>
-        </Link>
+        <button className="btn-compra" onClick={checkOut}>
+          Agregar al Carrito
+        </button>
+        {check ? (
+          <div className='check'>
+            <Link to='/'>
+              <button className="btn-check">
+                Seguir Comprando
+              </button>
+            </Link>
+            <Link to='/Cart'>
+              <button className="btn-check">
+                ir al Carrito
+              </button>
+            </Link>
+          </div>
+        ) : null}
       </div>
     </section>
   )

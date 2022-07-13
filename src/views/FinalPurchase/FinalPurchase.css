@@ -22,10 +22,10 @@
     display: block;
     align-items: center;
     justify-content: center;
-    margin: 10rem 25rem;
-    padding: 20px;
+    margin: 8rem 25rem;
+    padding: 50px;
     border-radius: 8px;
-    background: rgb(236, 231, 231);
+    background: rgb(241, 239, 239);
     border: 1px solid #444;
 }
 article {
@@ -36,9 +36,11 @@ article {
     text-align: center;
     justify-content: center;
     margin: 20px auto;
+    font-size: 20px;
+    color: black;
 }
 .h2-ticket {
-    color: #333;
+    color: #444;
     font-size: 20px;
 }
 .h2-ID {

@@ -1,3 +1,4 @@
+
 .bt-itemCount {
     margin-top: 20px;
 }
@@ -26,6 +27,22 @@
     text-decoration: none;
 }
 .btn-compra:hover {
+    background: #2471A3;
+    cursor: pointer;
+}
+.check {
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-check {
+    margin: 10px;
+    padding: 5px;
+    color: #fff;
+    border-radius: 6px;
+    background: #3498DB;
+    border: 1px solid #444;
+}
+.btn-check:hover {
     background: #2471A3;
     cursor: pointer;
 }
