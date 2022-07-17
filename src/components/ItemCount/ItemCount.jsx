@@ -25,7 +25,6 @@ const ItemCount = ({ data, onAdd }) => {
     } else {
       Swal.fire(
         'No puedes comprar 0 productos!',
-        'Desesas volver al menu?',
         'error'
       );;
     }
@@ -59,7 +58,7 @@ const ItemCount = ({ data, onAdd }) => {
         <button className="btn-compra" onClick={checkOut}>
           Agregar al Carrito
         </button>
-        {check ? (
+        {check &&
           <div className='check'>
             <Link to='/'>
               <button className="btn-check">
@@ -72,7 +71,7 @@ const ItemCount = ({ data, onAdd }) => {
               </button>
             </Link>
           </div>
-        ) : null}
+        }
       </div>
     </section>
   )

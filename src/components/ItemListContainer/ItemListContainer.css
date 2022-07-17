@@ -1,10 +1,28 @@
 .itemListContainer-Container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    margin: 1rem 4rem;
-    padding: 3rem;
+    grid-template-columns: repeat(3, auto);
+    gap: 40px;
+    justify-content: space-evenly;
+    margin: 2rem;
 }
 .div-card {
     text-decoration: none;
+}
+@media screen and (max-width:768px){ 
+    .itemListContainer-Container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 40px;
+        justify-content: space-evenly;
+        margin: 2rem;
+    }
+}
+@media screen and (max-width:425px){ 
+    .itemListContainer-Container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 40px;
+        justify-content: space-evenly;
+        margin: 2rem;
+    }
 }

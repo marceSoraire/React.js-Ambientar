@@ -13,7 +13,7 @@ const CartContainer = () => {
             {carrito.map((e) => (
                 <div className='finalizar' key={e.id}>
                     <div className='div-img'>
-                        <img src={e.img} className='img-carrito' />
+                        <img src={e.img} className='img-carrito' alt='img' />
                     </div>
                     <div className='div-res'>
                         <h2>{e.modelo}</h2>
@@ -27,14 +27,14 @@ const CartContainer = () => {
             }
             <h3 className='precioFinal'>Precio Final: ${totalCompra()}</h3>
             <div>
-                <button className='btn-opciones seguir'>
-                    <Link to='/' className='seguir-link'>Seguir comprando</Link>
-                </button>
                 <button onClick={() => clear()} className='btn-opciones vaciar'>
                     Vaciar carrito
                 </button>
+                <button className='btn-opciones seguir'>
+                    <Link to='/' className='seguir-link'>Seguir comprando</Link>
+                </button>
                 <button className='btn-opciones comprar'>
-                    <Link to='/finalpurchase' className='seguir-link'>
+                    <Link to='/FinalPurchase' className='seguir-link'>
                         Finalizar Compra
                     </Link>
                 </button>

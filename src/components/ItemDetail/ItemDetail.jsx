@@ -13,9 +13,9 @@ const ItemDetail= ( {data} ) => {
   const onAdd =(cant)=> addItem( data, cant )
   
   return (
-    <Card sx={{ minHeight: 460}}>
+    <Card sx={{ height: 465}}>
       <CardContent>
-      <Typography gutterBottom variant="h3" component="div">
+        <Typography gutterBottom variant="h3" component="div">
             {categoria}
         </Typography>
         <Typography gutterBottom variant="h4" component="div">

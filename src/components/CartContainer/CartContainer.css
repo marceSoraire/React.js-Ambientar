@@ -2,32 +2,6 @@
     margin-top: 20px;
     margin-bottom: 10rem;
 }
-.btn-opciones {
-    margin: 10px;
-    padding: 5px;
-    color: #fff;
-    background: #719cb6;
-    border: 1px solid #666;
-    font-size: 15px;
-    border-radius: 5%;
-    cursor: pointer;
-}
-.seguir-link {
-    color: #fff;
-    text-decoration: none;
-}
-.seguir:hover {
-    background: #5783a1;
-    border: 1px solid #333;
-}
-.vaciar:hover {
-    background: rgb(136, 79, 79);
-    border: 1px solid #333;
-}
-.comprar:hover {
-    background: rgb(81, 128, 75);
-    border: 1px solid #333;
-}
 .finalizar {
     display: flex;
     align-items: center;
@@ -54,10 +28,37 @@
     font-size: 20px;
     border: none;
     align-content: flex-end;
+    cursor: pointer;
 }
 h3 {
     color: rgb(83, 80, 80);
     margin-top: 5px;
     font-size: 20px;
+}
+.btn-opciones {
+    margin: 10px;
+    padding: 5px;
+    color: #fff;
+    background: #719cb6;
+    border: 1px solid #666;
+    font-size: 15px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.seguir-link {
+    color: #fff;
+    text-decoration: none;
+}
+.seguir:hover {
+    background: #5783a1;
+    border: 1px solid #333;
+}
+.vaciar:hover {
+    background: rgb(136, 79, 79);
+    border: 1px solid #333;
+}
+.comprar:hover {
+    background: rgb(81, 128, 75);
+    border: 1px solid #333;
 }
 

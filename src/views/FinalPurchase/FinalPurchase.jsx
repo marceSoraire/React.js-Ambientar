@@ -17,11 +17,13 @@ const FinalPurchase = () => {
     const { carrito, clear, totalCompra } = useContext(CartContext);
     const [values, setValues] = useState(initial);
     const [purchaseId, setPurchaseId] = useState('');
+    const [check, setCheck] = useState(false);
     const fecha = new Date();
 
     const handleOnChange = (e) => {
         const { value, name } = e.target;
         setValues({ ...values, [name]: value })
+        handleOperation();
     }
 
     const orden = () => {
@@ -41,17 +43,24 @@ const FinalPurchase = () => {
             setPurchaseId('')
             setValues(initial)
             clear()
-        }, 20000);
+        }, 15000);
     };
+
+    const handleOperation = () => {
+        if (values.name !== '' && values.email !== '' && values.tel !== '' && values.dir !== '') {
+            setCheck(true);
+        }
+    }
 
     return (
         <div>
             {purchaseId === '' ? (
                 <>
                     <form className='form' onSubmit={onSubmit}>
-                        <h3>Ingrese sus datos</h3>
+                        <h2 className='title-form'>Ingrese sus Datos</h2>
+                        <h3>Todos los campos son requeridos <span className='required'>*</span></h3>
                         <TextField
-                            placeholder='Name'
+                            placeholder='Nombre'
                             style={{ margin: 10, width: 400 }}
                             name='name'
                             value={values.name}
@@ -78,10 +87,9 @@ const FinalPurchase = () => {
                             value={values.dir}
                             onChange={handleOnChange}
                         />
-                        <button className='btnEnd'>Confirmar Compra</button>
+                        { check && <button className='btnEnd'>Confirmar Compra</button> }
                     </form>
                 </>
-
             ) : (
                 <div className='terminar'>
                     <article>

@@ -34,7 +34,6 @@ const ElemenDetail = () => {
 
     return (
         <div className='element-conteiner'>
-
             {load ? (
                 <div><Loading /></div>
             ) : (

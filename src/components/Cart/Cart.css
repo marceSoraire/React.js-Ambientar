@@ -27,4 +27,12 @@ h3 {
     height: 30vh;
     margin-bottom: 2rem;
     padding: 4rem;
+} 
+
+@media screen and (max-width: 375px) {
+    .vacio {
+        height: 30vh;
+        margin: 50px auto;
+        padding: 0;
+    } 
 }

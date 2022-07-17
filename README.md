@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Proyecto E-Commerce: Ambientar 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Soraire, Marcelo Andrés 
 
-## Available Scripts
-
-In the project directory, you can run:
+Proyceto realizado con el cli de React
+### Create React App.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+La app abre en el puerto: http//localost3000
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Las dependencias instaladas fueron:
 
-### `npm test`
+[] Material UI
+[] React Icons
+[] Firebase
+[] Boostrap
+[] Sweetalert2
+[] react-router-dom
+[] Axios
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## my-app
 
-### `npm run build`
+El E-Commerce es una tienda virtual de electrodomesticos, en la misma podemos
+acceder a compras de muebles con varias categorias a aleccion.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Esta nos permite filtrar productos a eleccion, seleccionar el producto deseado
+dirigiendonos a una vista en detalles del producto, donde el usuario pueda conocer
+todos los detalles del mismo y optar por la cantidad de unidades deseadas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Una vez ehca esta eleccion el producto sera sumado al carrito de compras donde su
+vista le indica al usuario todos los productos seleccionados y brindando las opciones
+de "eliminar un producto no deseado", "seguir comprando", "vaciar el carrito" o 
+"finalizar comapra".
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A continuacion de seleecionar "finalizar compra" el usuario debera completar un formulario
+con los datos solicitados para que el sistema pueda gestionar la compra y guardar la misma
+en Firestore, este se encaragara de devolver el ID de la compra realiaza por el usuario.
 
-### `npm run eject`
+### Dependencia
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Cabe destacar que no todas las dependencias instaladas son utilizadas en el proyecto. Algunas
+de ellas fueron instaladas de manera provisoria, para permitir que el proyecto cumpla en tiempo
+y forma con los desafios establecidos. 

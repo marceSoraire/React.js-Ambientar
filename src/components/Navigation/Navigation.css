@@ -1,7 +1,7 @@
 header {
     display: flex;
-    justify-content:space-evenly;
-    background: #2471A3;
+    justify-content:space-around;
+    background: #0d76bd;
     border-bottom: 1px solid #333;
     height: 11vh;
 }
@@ -10,47 +10,15 @@ header {
     color: white;
     font-size: 20px;
 }
-h1 {
-    margin-left: 3rem;
-}
 .logoTipo{
     height: 80px;
     margin: 10px 0 10px 3rem;
     border-radius: 15%;
     border: 1px solid #fff;
 }
-.filtro {
-    margin-top: 16px !important;
-    width: 500px;
-    height: 5.7vh;
-    border-radius: 8px;
-    background: white;
-}
-.btn-container {
-    margin-top: 16px;
-    height: 6vh;
-    background: none;
-    border: none;
-}
-.btn-lupa {
-    color: #fff;
-    font-size: 45px !important;;
-}
-.btn-lupa:hover {
-    cursor: pointer;
-    color: #333;
-}
-.ruter {
-    display: block;
-}
-.ruter-li {
-    text-decoration: none;
-    color: #fff;
-    margin: 2rem; 
-}
-.ruter-li:hover {
-    cursor: pointer;
-    color: #333;
+.title-header {
+    margin-left: 3rem;
+    font-size: 40px;
 }
 ul {
     display: flex;
@@ -61,7 +29,7 @@ ul {
     list-style: none;
     text-decoration: none;
     color: white;
-    margin: auto 10px;
+    margin: auto 8px;
     padding: 15px;   
     justify-content: space-around;
     font-size: 26px;
@@ -70,17 +38,30 @@ ul {
 }
 .carrito {
     font-size: 26px;
+    color: #fff;
     margin: 0 1rem;
-    color:#fff;
+    text-decoration: none;
 }
 .category-list {
-    width: 1rem;
-    background: none;
-    border: none;
+    font-size: 28px;
     color: #fff;
     cursor: pointer;
 }
-option {
-    color: #000;
-    font-size: 16px;
+.ruter-li {
+    background: none;
+    text-decoration: none;
+    color: #333;
+}
+@media screen and (max-width: 768px) {
+    h1{
+        display: none;
+    }
+}
+@media screen and (max-width: 425px) {
+    .li{
+        display: none;
+    }
+    .carrito {
+        margin:0;
+    }
 }
