@@ -11,13 +11,13 @@ La app abre en el puerto: http//localost3000
 
 Las dependencias instaladas fueron:
 
-[x] Material UI
-[x] React Icons
-[x] Firebase
-[x] Boostrap
-[x] Sweetalert2
-[x] react-router-dom
-[x] Axios
+* Material UI
+* React Icons
+* Firebase
+* Boostrap
+* Sweetalert2
+* react-router-dom
+* Axios
 
 ## my-app
 
