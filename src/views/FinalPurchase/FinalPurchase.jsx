@@ -58,7 +58,7 @@ const FinalPurchase = () => {
                 <>
                     <form className='form' onSubmit={onSubmit}>
                         <h2 className='title-form'>Ingrese sus Datos</h2>
-                        <h3>Todos los campos son requeridos <span className='required'>*</span></h3>
+                        <h3>Campos son requeridos <span className='required'>*</span></h3>
                         <TextField
                             placeholder='Nombre'
                             style={{ margin: 10, width: 400 }}

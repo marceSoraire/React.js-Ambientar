@@ -62,7 +62,7 @@ const ItemCount = ({ data, onAdd }) => {
           <div className='check'>
             <Link to='/'>
               <button className="btn-check">
-                Seguir Comprando
+                Continuar Comprando
               </button>
             </Link>
             <Link to='/Cart'>

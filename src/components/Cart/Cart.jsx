@@ -16,7 +16,7 @@ const Cart = () => {
           <button className='btn-opciones seguir'>
             <Link to='/' className='seguir-link'>Ir a comprar</Link>
           </button>
-          <h3>No has seleccionado ningun producto</h3>
+          <h3>No has seleccionado productos</h3>
           <img className='vacio' src={img} alt='Carro Vacio' />
         </div>
         : <CartContainer />

@@ -39,7 +39,7 @@ const Category = () => {
                     return (
                         <div key={data.id}>
                             <Link to={`detail/${data.id}`} className='div-card'>
-                                <CardComponents data={data} />
+                                <CardComponents data={data}/>
                             </Link>
                         </div>
                     )

@@ -31,7 +31,9 @@ const CartContainer = () => {
                     Vaciar carrito
                 </button>
                 <button className='btn-opciones seguir'>
-                    <Link to='/' className='seguir-link'>Seguir comprando</Link>
+                    <Link to='/' className='seguir-link'>
+                        Seguir comprando
+                    </Link>
                 </button>
                 <button className='btn-opciones comprar'>
                     <Link to='/FinalPurchase' className='seguir-link'>

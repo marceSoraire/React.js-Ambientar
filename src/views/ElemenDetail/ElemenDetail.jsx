@@ -44,7 +44,7 @@ const ElemenDetail = () => {
                                 <CardComponents data={data} />
                             </div>
                             <div className='itemCount-count'>
-                                <ItemDetail data={data} />
+                                <ItemDetail data={data}/>
                             </div>
                         </div>
                     )

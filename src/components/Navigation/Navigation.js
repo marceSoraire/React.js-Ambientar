@@ -45,7 +45,7 @@ const Navigation = () => {
                         <Link to='/categoria/Celular' className='ruter-li'>Celular</Link>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                        <Link to='/categoria/Consola' className='ruter-li'>Consola</Link>
+                        <Link to='/categoria/Consola' className='ruter-li'>Consolas</Link>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
                         <Link to='/categoria/Electro' className='ruter-li'>Electro</Link>
@@ -54,7 +54,7 @@ const Navigation = () => {
                         <Link to='/categoria/Gabinete' className='ruter-li'>Gabinete</Link>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                        <Link to='/categoria/Televisor' className='ruter-li'>Televisor</Link>
+                        <Link to='/categoria/Televisor' className='ruter-li'>Televisores</Link>
                     </MenuItem>
                 </Menu>
             </nav>
