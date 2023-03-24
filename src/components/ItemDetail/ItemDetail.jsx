@@ -8,7 +8,7 @@ import { CartContext } from '../CartContext/CartContext';
 const ItemDetail= ( {data} ) => {
 
   const  { addItem } = useContext(CartContext);
-  const {id, img, precio, modelo,categoria, fabricado, stock} = data;
+  const {precio, modelo,categoria, fabricado, stock} = data;
 
   const onAdd =(cant)=> addItem( data, cant )
   
